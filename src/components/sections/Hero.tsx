@@ -1,6 +1,7 @@
 import type { PersonalInfo } from "@/types/cv";
 import Button from "@/components/ui/Button";
 import styles from "./Hero.module.css";
+import Image from "next/image";
 
 interface HeroProps {
   personal: PersonalInfo;
@@ -38,10 +39,14 @@ export default function Hero({ personal }: HeroProps) {
         </div>
       </div>
 
-      <div className={styles.avatar} aria-hidden="true">
-        <span className={styles.avatarInitials}>RH</span>
-        {/* Replace with: <Image src="/avatar.jpg" alt="Roller Hernández" fill className={styles.avatarImg} /> */}
-      </div>
+      <div className={styles.avatar}>
+  <Image
+    src="/avatar.jpeg"
+    alt="Roller Hernández"
+    fill
+    className={styles.avatarImg}
+  />
+</div>
     </section>
   );
 }

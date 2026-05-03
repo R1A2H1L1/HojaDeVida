@@ -1,0 +1,24 @@
+.section {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 3.5rem 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.header {
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-family: var(--font-serif);
+  font-size: 1.65rem;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding: 2.5rem 1.25rem;
+  }
+}

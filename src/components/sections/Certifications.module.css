@@ -1,0 +1,58 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.9rem 1.25rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  gap: 1rem;
+}
+
+.name {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.issuer {
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 2px;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.year {
+  font-size: 13px;
+  color: var(--subtle);
+}
+
+.badgeInProgress {
+  font-size: 11px;
+  font-weight: 500;
+  padding: 3px 11px;
+  border-radius: var(--radius-pill);
+  background: #f5eddb;
+  color: #8a6530;
+}
+
+.badgeCompleted {
+  font-size: 11px;
+  font-weight: 500;
+  padding: 3px 11px;
+  border-radius: var(--radius-pill);
+  background: #e4f0e0;
+  color: #3a6b34;
+}
